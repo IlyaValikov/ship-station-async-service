@@ -20,7 +20,7 @@ class ProbabilityView(APIView):
     
 def do_work(request_id):
     sleep(7)
-    result = 'success' if random.uniform(0, 1) < 0.7 else 'fail'
+    result = 'Оплачено' if random.uniform(0, 1) < 0.7 else 'Ошибка при оплате'
     request = api.put('http://localhost:8080/travelrequests/change-paidstatus', json={
         'key': "12345",
         'id': str(request_id),
