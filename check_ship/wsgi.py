@@ -1,5 +1,5 @@
 """
-WSGI config for nikita_pay project.
+WSGI config for check_ship project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "nikita_pay.settings")
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "check_ship.settings")
 
 application = get_wsgi_application()

@@ -1,5 +1,5 @@
 """
-URL configuration for nikita_pay project.
+URL configuration for check_ship project.
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/5.0/topics/http/urls/
@@ -17,10 +17,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
-from nikita_pay.views import ProbabilityView
+from check_ship.views import ProbabilityView
 
 urlpatterns = [
     path("admin/", admin.site.urls),
     path('api-auth/', include('rest_framework.urls')),
-    path('pay/', ProbabilityView.as_view(), name='probability'),
+    path('check/', ProbabilityView.as_view(), name='probability'),
 ]
